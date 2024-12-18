@@ -1,0 +1,128 @@
+/* Weather.css */
+
+/* General styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container for the weather app */
+.weather-container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Title styling */
+.app-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Form container */
+.weather-form {
+  margin-bottom: 20px;
+}
+
+/* Input field */
+.city-input {
+  padding: 10px;
+  width: 80%;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  margin-right: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.city-input:focus {
+  border-color: #3498db;
+}
+
+/* Submit button */
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Loading and error message */
+.loading-text, .error-text {
+  font-size: 1rem;
+  color: #e74c3c;
+}
+
+.error-text {
+  color: #e74c3c;
+  margin-top: 10px;
+}
+
+/* Weather details styling */
+.weather-details {
+  background-color: #f4f4f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Weather info section */
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.weather-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.weather-icon {
+  font-size: 1.5rem;
+  color: #3498db;
+}
+
+.weather-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.weather-details p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #7f8c8d;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .weather-container {
+    width: 90%;
+    padding: 20px;
+  }
+}

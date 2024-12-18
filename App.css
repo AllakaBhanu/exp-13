@@ -1,0 +1,155 @@
+/* App.css */
+
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f4f8; /* Light background for the entire page */
+  min-height: 100vh;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Container to center the content */
+.app-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Form styling */
+.weather-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.city-input {
+  padding: 12px;
+  width: 70%;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  font-size: 1rem;
+  margin-right: 10px;
+  outline: none;
+}
+
+.city-input:focus {
+  border-color: #3498db;
+}
+
+.submit-btn {
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Loading and error text */
+.loading-text {
+  font-size: 1.2rem;
+  color: #2980b9;
+}
+
+.error-text {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  margin-top: 10px;
+}
+
+/* Weather info section */
+.weather-details {
+  margin-top: 30px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.weather-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.weather-icon {
+  font-size: 2rem;
+  color: #3498db;
+}
+
+.weather-details h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.weather-details p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+}
+
+.weather-item p {
+  font-size: 1.2rem;
+  color: #34495e;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .app-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .submit-btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+
+  .city-input {
+    width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .city-input {
+    width: 50%;
+  }
+
+  .submit-btn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+
